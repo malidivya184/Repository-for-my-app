@@ -1,5 +1,5 @@
 function searchProfile() {
-    fetch("https://abc123.execute-api.ap-south-1.amazonaws.com")
+    fetch("https://7yjksjxgbk.execute-api.ap-south-1.amazonaws.com/new")
         .then(response => response.json())
         .then(data => {
             alert(data.message);
