@@ -3,19 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My AWS Static Website</title>
+    <title>Marathi Matrimony</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>🚀 Welcome to My Static Website</h1>
-        <p>This website is deployed using AWS CodePipeline + S3</p>
+<header>
+    <h1>💍 Marathi Matrimony</h1>
+    <p>Find your perfect life partner</p>
+</header>
 
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message"></p>
+<section class="search">
+    <h2>Search Profiles</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <button onclick="searchProfile()">Search</button>
+</section>
+
+<section class="profiles">
+    <h2>Featured Profiles</h2>
+
+    <div class="card">
+        <h3>Rahul Patil</h3>
+        <p>Age: 28 | Engineer | Pune</p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="card">
+        <h3>Priya Deshmukh</h3>
+        <p>Age: 25 | Doctor | Mumbai</p>
+    </div>
+
+    <div class="card">
+        <h3>Amit Joshi</h3>
+        <p>Age: 30 | Businessman | Nashik</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Marathi Matrimony | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
